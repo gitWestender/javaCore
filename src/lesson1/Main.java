@@ -39,6 +39,18 @@ public class Main {
         //По окончании метода будем иметь массив со значениями [99, 4]
         changeValue(value8);
         System.out.println(Arrays.toString(value8));
+
+        Person person = new Person("Lyapis", "Trubetskoy");
+        //Задание 9
+        //Объяснение алналогично 2ому заданию, ведь там тоже используеться объект класса(только другого)
+        //Имя и фамилия не изменяться
+        //Задание 10
+        //Т.к переменной параметру метода присваиваеться ссылка на объект,
+        //то изменения объекта, при которых используеться эта ссылка,
+        //будут видны и переменной, чью ссылку мы передали
+        //Имя и фамилия изменяться
+        changePerson(person);
+        System.out.println(person.toString());
     }
 
     static void changeValue(int value) {
@@ -52,5 +64,11 @@ public class Main {
     static void changeValue(Integer[] value) {
         //value = new Integer[] {3, 4};
         value[0] = 99;
+    }
+
+    public static void changePerson(Person person) {
+        //person = new Person("Ilya", "Lagutenko");
+        person.setName("Ilya");
+        person.setSurname("Lagutenko");
     }
 }

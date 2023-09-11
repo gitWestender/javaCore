@@ -27,7 +27,7 @@ public class Hogwarts {
 
     @Override
     public String toString() {
-        return name + " " + surname + "\n"
+        return "\n" + name + " " + surname + "\n"
                 + "Свойства характера:\n";
     }
 

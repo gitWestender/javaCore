@@ -30,4 +30,8 @@ public class Hogwarts {
         return name + " " + surname + "\n"
                 + "Свойства характера:\n";
     }
+
+    public void printInfo() {
+        System.out.println(toString());
+    }
 }

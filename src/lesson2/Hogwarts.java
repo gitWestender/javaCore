@@ -3,10 +3,14 @@ package lesson2;
 public class Hogwarts {
     private String name;
     private String surname;
+    private int magicPower;
+    private int transgressionRange;
 
-    public Hogwarts(String name, String surname) {
+    public Hogwarts(String name, String surname, int magicPower, int transgressionRange) {
         this.name = name;
         this.surname = surname;
+        this.magicPower = magicPower;
+        this.transgressionRange = transgressionRange;
     }
 
     public String getName() {
@@ -25,10 +29,26 @@ public class Hogwarts {
         this.surname = surname;
     }
 
+    public int getMagicPower() {
+        return magicPower;
+    }
+
+    public void setMagicPower(int magicPower) {
+        this.magicPower = magicPower;
+    }
+
+    public int getTransgressionRange() {
+        return transgressionRange;
+    }
+
+    public void setTransgressionRange(int transgressionRange) {
+        this.transgressionRange = transgressionRange;
+    }
+
     @Override
     public String toString() {
         return "\n" + name + " " + surname + "\n"
-                + "Свойства характера:\n";
+                + "Сила магии: " + magicPower + ", Расстояние трансгрессирования: " + transgressionRange + "\n";
     }
 
     public void printInfo() {

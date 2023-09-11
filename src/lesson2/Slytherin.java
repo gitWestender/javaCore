@@ -7,13 +7,13 @@ public class Slytherin extends Hogwarts {
     private int resourcefulness;
     private int lustOfPower;
 
-    public Slytherin(String name, String surname, int magicPower, int transgressionRange, int trickery, int resoluteness, int ambition, int resourcefulness, int lustOfPower) {
-        super(name, surname, magicPower, transgressionRange);
-        this.trickery = trickery;
-        this.resoluteness = resoluteness;
-        this.ambition = ambition;
-        this.resourcefulness = resourcefulness;
-        this.lustOfPower = lustOfPower;
+    public Slytherin(String name, String surname) {
+        super(name, surname);
+        this.trickery = getRND();
+        this.resoluteness = getRND();
+        this.ambition = getRND();
+        this.resourcefulness = getRND();
+        this.lustOfPower = getRND();
     }
 
     public int getTrickery() {

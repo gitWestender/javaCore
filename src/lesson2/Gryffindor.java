@@ -1,15 +1,17 @@
 package lesson2;
 
+import java.util.Random;
+
 public class Gryffindor extends Hogwarts {
     private int nobility;
     private int honor;
     private int bravery;
 
-    public Gryffindor(String name, String surname, int magicPower, int transgressionRange, int nobility, int honor, int bravery) {
-        super(name, surname, magicPower, transgressionRange);
-        this.nobility = nobility;
-        this.honor = honor;
-        this.bravery = bravery;
+    public Gryffindor(String name, String surname) {
+        super(name, surname);
+        this.nobility = getRND();
+        this.honor = getRND();
+        this.bravery = getRND();
     }
 
     public int getNobility() {

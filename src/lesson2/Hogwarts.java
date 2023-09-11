@@ -1,16 +1,20 @@
 package lesson2;
 
+import java.util.Random;
+
 public class Hogwarts {
+    static Random rnd = new Random();
+
     private String name;
     private String surname;
     private int magicPower;
     private int transgressionRange;
 
-    public Hogwarts(String name, String surname, int magicPower, int transgressionRange) {
+    public Hogwarts(String name, String surname) {
         this.name = name;
         this.surname = surname;
-        this.magicPower = magicPower;
-        this.transgressionRange = transgressionRange;
+        this.magicPower = getRND();
+        this.transgressionRange = getRND();
     }
 
     public String getName() {
@@ -54,4 +58,9 @@ public class Hogwarts {
     public void printInfo() {
         System.out.println(toString());
     }
+
+    public static int getRND() {
+        return rnd.nextInt(101);
+    }
+
 }

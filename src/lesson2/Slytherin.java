@@ -3,13 +3,15 @@ package lesson2;
 public class Slytherin extends Hogwarts {
     private int trickery;
     private int resoluteness;
+    private int ambition;
     private int resourcefulness;
     private int lustOfPower;
 
-    public Slytherin(String name, String surname, int trickery, int resoluteness, int resourcefulness, int lustOfPower) {
+    public Slytherin(String name, String surname, int trickery, int resoluteness, int ambition, int resourcefulness, int lustOfPower) {
         super(name, surname);
         this.trickery = trickery;
         this.resoluteness = resoluteness;
+        this.ambition = ambition;
         this.resourcefulness = resourcefulness;
         this.lustOfPower = lustOfPower;
     }
@@ -30,6 +32,14 @@ public class Slytherin extends Hogwarts {
         this.resoluteness = resoluteness;
     }
 
+    public int getAmbition() {
+        return ambition;
+    }
+
+    public void setAmbition(int ambition) {
+        this.ambition = ambition;
+    }
+
     public int getResourcefulness() {
         return resourcefulness;
     }
@@ -44,5 +54,14 @@ public class Slytherin extends Hogwarts {
 
     public void setLustOfPower(int lustOfPower) {
         this.lustOfPower = lustOfPower;
+    }
+
+    @Override
+    public String toString() {
+        return  super.toString() + "Хитрость: " + trickery +
+                ", Решительность: " + resoluteness +
+                ", Амбициозность: " + ambition +
+                ", Находчивость: " + resourcefulness +
+                ", Жажда власти: " + lustOfPower;
     }
 }

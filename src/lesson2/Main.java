@@ -20,12 +20,10 @@ public class Main {
         Ravenclaw padme = new Ravenclaw("Падма", "Патил");
         Ravenclaw marcus = new Ravenclaw("Маркус", "Белби");
 
-        drako.printInfo();
-        System.out.println("drako.getSumOfMagicProperties() = " + drako.getSumOfMagicProperties());
-        ron.printInfo();
-        System.out.println("ron.getSumOfMagicProperties() = " + ron.getSumOfMagicProperties());
-
         Hogwarts hgw = new Hogwarts();
+
+        drako.printInfo();
+        ron.printInfo();
 
         hgw.studEquals(harry, hermyona);
         hgw.studEquals(drako, ron);

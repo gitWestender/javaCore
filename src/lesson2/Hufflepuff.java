@@ -16,24 +16,12 @@ public class Hufflepuff extends Hogwarts {
         return hardWorker;
     }
 
-    public void setHardWorker(int hardWorker) {
-        this.hardWorker = hardWorker;
-    }
-
     public int getLoyalty() {
         return loyalty;
     }
 
-    public void setLoyalty(int loyalty) {
-        this.loyalty = loyalty;
-    }
-
     public int getHonesty() {
         return honesty;
-    }
-
-    public void setHonesty(int honesty) {
-        this.honesty = honesty;
     }
 
     @Override
@@ -41,5 +29,10 @@ public class Hufflepuff extends Hogwarts {
         return super.toString() + "Трудолюбие: " + hardWorker +
                 ", Верность: " + loyalty +
                 ", Честность: " + honesty;
+    }
+
+    @Override
+    public int sumOfProperties() {
+        return getHardWorker() + getHonesty() + getLoyalty();
     }
 }

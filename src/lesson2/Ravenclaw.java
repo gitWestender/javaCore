@@ -18,32 +18,16 @@ public class Ravenclaw extends Hogwarts {
         return mind;
     }
 
-    public void setMind(int mind) {
-        this.mind = mind;
-    }
-
     public int getWisdom() {
         return wisdom;
-    }
-
-    public void setWisdom(int wisdom) {
-        this.wisdom = wisdom;
     }
 
     public int getWitty() {
         return witty;
     }
 
-    public void setWitty(int witty) {
-        this.witty = witty;
-    }
-
     public int getCreative() {
         return creative;
-    }
-
-    public void setCreative(int creative) {
-        this.creative = creative;
     }
 
     @Override
@@ -53,5 +37,10 @@ public class Ravenclaw extends Hogwarts {
                 ", Остроумность: " + witty +
                 ", Творчество:" + creative +
                 '}';
+    }
+
+    @Override
+    public int sumOfProperties() {
+        return getCreative() + getMind() + getWisdom() + getWitty();
     }
 }

@@ -20,48 +20,32 @@ public class Slytherin extends Hogwarts {
         return trickery;
     }
 
-    public void setTrickery(int trickery) {
-        this.trickery = trickery;
-    }
-
     public int getResoluteness() {
         return resoluteness;
-    }
-
-    public void setResoluteness(int resoluteness) {
-        this.resoluteness = resoluteness;
     }
 
     public int getAmbition() {
         return ambition;
     }
 
-    public void setAmbition(int ambition) {
-        this.ambition = ambition;
-    }
-
     public int getResourcefulness() {
         return resourcefulness;
-    }
-
-    public void setResourcefulness(int resourcefulness) {
-        this.resourcefulness = resourcefulness;
     }
 
     public int getLustOfPower() {
         return lustOfPower;
     }
 
-    public void setLustOfPower(int lustOfPower) {
-        this.lustOfPower = lustOfPower;
-    }
-
     @Override
     public String toString() {
-        return  super.toString() + "Хитрость: " + trickery +
+        return super.toString() + "Хитрость: " + trickery +
                 ", Решительность: " + resoluteness +
                 ", Амбициозность: " + ambition +
                 ", Находчивость: " + resourcefulness +
                 ", Жажда власти: " + lustOfPower;
+    }
+
+    public int sumOfProperties() {
+        return getAmbition() + getResoluteness() + getTrickery() + getLustOfPower() + getResourcefulness();
     }
 }

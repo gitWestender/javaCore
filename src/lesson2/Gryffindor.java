@@ -18,24 +18,12 @@ public class Gryffindor extends Hogwarts {
         return nobility;
     }
 
-    public void setNobility(int nobility) {
-        this.nobility = nobility;
-    }
-
     public int getHonor() {
         return honor;
     }
 
-    public void setHonor(int honor) {
-        this.honor = honor;
-    }
-
     public int getBravery() {
         return bravery;
-    }
-
-    public void setBravery(int bravery) {
-        this.bravery = bravery;
     }
 
     @Override
@@ -44,4 +32,9 @@ public class Gryffindor extends Hogwarts {
                 ", Честь: " + honor +
                 ", Отвага: " + bravery;
     }
+
+    public int sumOfProperties() {
+        return getBravery() + getHonor() + getNobility();
+    }
+
 }

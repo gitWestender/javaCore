@@ -40,7 +40,7 @@ public class Ravenclaw extends Hogwarts {
     }
 
     @Override
-    public int sumOfProperties() {
+    public int sumOfPersonalFutures() {
         return getCreative() + getMind() + getWisdom() + getWitty();
     }
 }

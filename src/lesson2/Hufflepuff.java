@@ -32,7 +32,7 @@ public class Hufflepuff extends Hogwarts {
     }
 
     @Override
-    public int sumOfProperties() {
+    public int sumOfPersonalFutures() {
         return getHardWorker() + getHonesty() + getLoyalty();
     }
 }

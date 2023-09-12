@@ -33,7 +33,7 @@ public class Gryffindor extends Hogwarts {
                 ", Отвага: " + bravery;
     }
 
-    public int sumOfProperties() {
+    public int sumOfPersonalFutures() {
         return getBravery() + getHonor() + getNobility();
     }
 

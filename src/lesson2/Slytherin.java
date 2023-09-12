@@ -45,7 +45,7 @@ public class Slytherin extends Hogwarts {
                 ", Жажда власти: " + lustOfPower;
     }
 
-    public int sumOfProperties() {
+    public int sumOfPersonalFutures() {
         return getAmbition() + getResoluteness() + getTrickery() + getLustOfPower() + getResourcefulness();
     }
 }

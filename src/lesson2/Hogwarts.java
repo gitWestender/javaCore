@@ -3,6 +3,7 @@ package lesson2;
 import java.util.Random;
 
 public class Hogwarts {
+
     static Random rnd = new Random();
 
     private String name;
@@ -10,8 +11,7 @@ public class Hogwarts {
     private int magicPower;
     private int transgressionRange;
 
-    public Hogwarts() {
-    }
+    public Hogwarts(){}
 
     public Hogwarts(String name, String surname) {
         this.name = name;

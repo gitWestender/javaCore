@@ -1,6 +1,6 @@
 package lesson2;
 
-public class Main extends Hogwarts {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -23,9 +23,14 @@ public class Main extends Hogwarts {
         drako.printInfo();
         harry.printInfo();
 
+        Hogwarts hgw = new Hogwarts();
 
+        System.out.println();
+        System.out.println("drako.sumOfProperties() = " + drako.sumOfProperties());
+        System.out.println("harry.sumOfProperties() = " + harry.sumOfProperties());
+        System.out.println();
 
-        studEquals(drako, harry);
+        hgw.studEquals(drako, harry);
 
     }
 

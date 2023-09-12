@@ -1,31 +1,32 @@
 package lesson2;
 
-import java.util.Random;
-
-public class Main {
-    static Random rnd = new Random();
+public class Main extends Hogwarts {
 
     public static void main(String[] args) {
-        Gryffindor harry = new Gryffindor("Гарри", "Поттер", getRND(), getRND(), getRND(), getRND(), getRND());
-        Gryffindor hermyona = new Gryffindor("гермиона", "Грейнджер", getRND(), getRND(), getRND(), getRND(), getRND());
-        Gryffindor ron = new Gryffindor("Рон", "Уизли", getRND(), getRND(), getRND(), getRND(), getRND());
 
-        Slytherin drako = new Slytherin("Драко", "Малфой", getRND(), getRND(), getRND(), getRND(), getRND(), getRND(), getRND());
-        Slytherin graham = new Slytherin("Грэхэм", "Монтегрю", getRND(), getRND(), getRND(), getRND(), getRND(), getRND(), getRND());
-        Slytherin gregory = new Slytherin("Грегори", "Гойл", getRND(), getRND(), getRND(), getRND(), getRND(), getRND(), getRND());
+        Gryffindor harry = new Gryffindor("Гарри", "Поттер");
+        Gryffindor hermyona = new Gryffindor("Гермиона", "Грейнджер");
+        Gryffindor ron = new Gryffindor("Рон", "Уизли");
 
-        Hufflepuff zacharias = new Hufflepuff("Захария", "Смит", getRND(), getRND(), getRND(), getRND(), getRND());
-        Hufflepuff cedric = new Hufflepuff("Седрик", "Диггори", getRND(), getRND(), getRND(), getRND(), getRND());
-        Hufflepuff justin = new Hufflepuff("Джастин", "Финч-Флетчли", getRND(), getRND(), getRND(), getRND(), getRND());
+        Slytherin drako = new Slytherin("Драко", "Малфой");
+        Slytherin graham = new Slytherin("Грэхэм", "Монтегрю");
+        Slytherin gregory = new Slytherin("Грегори", "Гойл");
 
-        Ravenclaw cho = new Ravenclaw("Чжоу", "Чанг", getRND(), getRND(), getRND(), getRND(), getRND(), getRND());
-        Ravenclaw padme = new Ravenclaw("Падма", "Патил", getRND(), getRND(), getRND(), getRND(), getRND(), getRND());
-        Ravenclaw marcus = new Ravenclaw("Маркус", "Белби", getRND(), getRND(), getRND(), getRND(), getRND(), getRND());
+        Hufflepuff zacharias = new Hufflepuff("Захария", "Смит");
+        Hufflepuff cedric = new Hufflepuff("Седрик", "Диггори");
+        Hufflepuff justin = new Hufflepuff("Джастин", "Финч-Флетчли");
 
-    }
+        Ravenclaw cho = new Ravenclaw("Чжоу", "Чанг");
+        Ravenclaw padme = new Ravenclaw("Падма", "Патил");
+        Ravenclaw marcus = new Ravenclaw("Маркус", "Белби");
 
-    public static int getRND() {
-        return rnd.nextInt(101);
+        drako.printInfo();
+        harry.printInfo();
+
+
+
+        studEquals(drako, harry);
+
     }
 
 }

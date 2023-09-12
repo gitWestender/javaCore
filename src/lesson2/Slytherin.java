@@ -1,6 +1,7 @@
 package lesson2;
 
 public class Slytherin extends Hogwarts {
+
     private int trickery;
     private int resoluteness;
     private int ambition;
@@ -14,6 +15,7 @@ public class Slytherin extends Hogwarts {
         this.ambition = getRND();
         this.resourcefulness = getRND();
         this.lustOfPower = getRND();
+        this.faculty = "Слизерин";
     }
 
     public int getTrickery() {
@@ -45,7 +47,8 @@ public class Slytherin extends Hogwarts {
                 ", Жажда власти: " + lustOfPower;
     }
 
-    public int sumOfPersonalFutures() {
+    public int getSumOfPersonalProperties() {
         return getAmbition() + getResoluteness() + getTrickery() + getLustOfPower() + getResourcefulness();
     }
+
 }

@@ -3,6 +3,7 @@ package lesson2;
 import java.util.Random;
 
 public class Gryffindor extends Hogwarts {
+
     private int nobility;
     private int honor;
     private int bravery;
@@ -12,6 +13,7 @@ public class Gryffindor extends Hogwarts {
         this.nobility = getRND();
         this.honor = getRND();
         this.bravery = getRND();
+        this.faculty = "Гриффиндор";
     }
 
     public int getNobility() {
@@ -33,8 +35,7 @@ public class Gryffindor extends Hogwarts {
                 ", Отвага: " + bravery;
     }
 
-    public int sumOfPersonalFutures() {
+    public int getSumOfPersonalProperties() {
         return getBravery() + getHonor() + getNobility();
     }
-
 }

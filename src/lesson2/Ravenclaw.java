@@ -1,6 +1,7 @@
 package lesson2;
 
 public class Ravenclaw extends Hogwarts {
+
     private int mind;
     private int wisdom;
     private int witty;
@@ -12,6 +13,7 @@ public class Ravenclaw extends Hogwarts {
         this.wisdom = getRND();
         this.witty = getRND();
         this.creative = getRND();
+        this.faculty = "Когтевран";
     }
 
     public int getMind() {
@@ -39,8 +41,7 @@ public class Ravenclaw extends Hogwarts {
                 '}';
     }
 
-    @Override
-    public int sumOfPersonalFutures() {
+    public int getSumOfPersonalProperties() {
         return getCreative() + getMind() + getWisdom() + getWitty();
     }
 }

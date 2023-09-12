@@ -1,6 +1,7 @@
 package lesson2;
 
 public class Hufflepuff extends Hogwarts {
+
     private int hardWorker;
     private int loyalty;
     private int honesty;
@@ -10,6 +11,7 @@ public class Hufflepuff extends Hogwarts {
         this.hardWorker = getRND();
         this.loyalty = getRND();
         this.honesty = getRND();
+        this.faculty = "Пуффендуй";
     }
 
     public int getHardWorker() {
@@ -31,8 +33,7 @@ public class Hufflepuff extends Hogwarts {
                 ", Честность: " + honesty;
     }
 
-    @Override
-    public int sumOfPersonalFutures() {
+    public int getSumOfPersonalProperties() {
         return getHardWorker() + getHonesty() + getLoyalty();
     }
 }

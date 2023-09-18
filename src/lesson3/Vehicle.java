@@ -1,6 +1,6 @@
 package lesson3;
 
-public class Vehicle {
+public abstract class Vehicle implements IService{
 
     private String modelName;
     private int wheelsCount;
@@ -18,13 +18,4 @@ public class Vehicle {
         return wheelsCount;
     }
 
-
-    public void checkEngine() {
-    }
-
-    public void updateTyre() {
-    }
-
-    public void checkTrailer() {
-    }
 }

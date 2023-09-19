@@ -18,4 +18,8 @@ public abstract class Vehicle implements IService{
         return wheelsCount;
     }
 
+    public void updateTyre() {
+        System.out.println("Меняем покрышку");
+    }
+
 }

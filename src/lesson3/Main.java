@@ -11,9 +11,10 @@ public class Main {
                 new Bicycle("b2", 2)
         };
 
+        ServiceStation ss = new ServiceStation();
 
         for (int i = 0; i < vehicles.length; i++) {
-            vehicles[i].check();
+            ss.service(vehicles[i]);
         }
     }
 }
